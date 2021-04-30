@@ -1,24 +1,14 @@
 ---
-layout: default
+layout: page
+title: 404
+sitemap:
+  exclude: 'yes'
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<h2 class="go-home">
+    I suggest you <a href="/">going home</a>, it's 404 and it's getting dark!
+</h2>
 
-<div class="container">
-  <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!-- Adding the glitch effect -->
+<script> document.getElementsByTagName('body')[0].classList.add('glitch'); </script>

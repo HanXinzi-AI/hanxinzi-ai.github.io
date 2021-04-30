@@ -1,51 +1,51 @@
-# Jekyll Theme - Mundana by WowThemes.net
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
-[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+# Daktilo
+Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
 
-![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
+# More info and Live preview
+[Click here](http://daktilo.github.io/) to see the theme in action.
 
-### Documentation
+# Features
+- Fully responsive
+- [Disqus](https://disqus.com/) integration for comments.
+- Google Analytics integration.
+- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
+- Support for categories.
+- Font-Awesome Icons.
+- Optimized for SEO.
+- Coolest [404 page ever](http://kronik3r.github.io/daktilo/404.html).
 
-[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+# How to use it
+Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
+Note that the `title` property is what will be displayed as logo.
 
-### Contribute to Mundana repository
+Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
 
-1. In the top-right corner of this page, click **Fork**.
+# Using categories
+Categories are little bit tricky. Please make sure to do the following for each category:
 
-2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+- Create a file within `categories` folder with the name of your category
+For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
 
-   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+``` html
+---
+layout: category
+category: an-awesome-category
+permalink: /categories/an-awesome-category/
+---
 
-3. **Create a branch**: 
+```
 
-   `git checkout -b <my-new-feature-or-fix>`
+- Create an entry inside `_data/categories.yml`
 
-4. **Make necessary changes and commit those changes**:
+``` html
+- slug: an-awesome-category
+  name: An Awesome Category
+```
 
-   `git add .`
+- Then you will see it in the footer in the `Explore` section.
 
-   `git commit -m "new feature or fix"`
+# License
 
-5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
-
-   `git push origin <add-your-branch-name>`
-
-6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
-
-That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
-
-
-### Copyright
-
-Copyright (C) 2019 WowThemes.net.
-
-Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
-
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-### Live Demo
-
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
+The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
