@@ -1,12 +1,10 @@
 ---
 layout: page
-title: About
-subtitle: Just who the hell you think I am?
+title: 关于
+subtitle: 想了解我是谁？
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- 🔭 10年数据挖掘与算法研发老🐶，历任**百度，阿里，美团点评 算法专家**
+- 🌱 热衷于**知识分享与传播**
+- 💬 熟悉**Python，Java，机器学习，自然语言处理，推荐算法，计算广告**
