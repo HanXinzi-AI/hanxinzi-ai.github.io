@@ -1,18 +1,13 @@
 ---
-layout: page
-title: 博客
-subtitle: HanXinzi的AI算法世界
-sitemap:
-  priority: 0.9
+layout: presentation
 ---
 
-<ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% for post in site.posts reversed %}
+	{% include slide.html %}
+	<div class="page-break"></div>
+{% endfor %}
+{% unless site.simple-slideshow %}
+{% if site.overview %}
+<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
+{% endif %}
+{% endunless %}
